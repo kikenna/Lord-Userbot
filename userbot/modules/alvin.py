@@ -409,41 +409,48 @@ async def _(event):
             await event.edit(animation_chars[i % 11])
 
 
-@register(outgoing=True, pattern='^.gombal(?: |$)(.*)')
+@register(outgoing=True, pattern='^.r(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
+    await typew.edit("`Halo`")
     sleep(1)
-    await typew.edit("`Hai, I LOVE YOU 💞`")
+    await typew.edit("`Namaku,Frisky :)`")
     sleep(1)
-    await typew.edit("`I LOVE YOU SO MUCH!`")
+    await typew.edit("`18 Tahun`")
     sleep(1)
-    await typew.edit("`I NEED YOU!`")
-    sleep(1)
-    await typew.edit("`I WANT TO BE YOUR BOYFRIEND!`")
-    sleep(1)
-    await typew.edit("`I LOVEE YOUUUU💕💗`")
-    sleep(1)
-    await typew.edit("`I LOVEE YOUUUU💗💞`")
-    sleep(1)
-    await typew.edit("`I LOVEE YOUUUU💝💗`")
-    sleep(1)
-    await typew.edit("`I LOVEE YOUUUU💟💖`")
-    sleep(1)
-    await typew.edit("`I LOVEE YOUUUU💘💓`")
-    sleep(1)
-    await typew.edit("`Tapi Bo'ong`")
-# Create by myself @localheart
+    await typew.edit("`Asal Lampung,Salken :)`")
+# Create by myself @lubego666
+
+
+@register(outgoing=True, pattern='^.o(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("oo")
+    await typew.edit("ooo")
+    await typew.edit("oooo")
+    await typew.edit("ooooo")
+    await typew.edit("oooooo")
+    await typew.edit("ooooo")
+    await typew.edit("oooo")
+    await typew.edit("ooo")
+    await typew.edit("oo")
+    await typew.edit("o")
+    await typew.edit("o aja sih")
+# Create by myself @lubego666
+
 
 CMD_HELP.update({
     "gabut":
     "`.gabut` ; `.dino`\
     \nUsage: ntahlah gabut doang.\
-    \n\n`.gombal`\
-    \nUsage: buat bercanda\
+    \n\n`.r`\
+    \nUsage: apa ini gatau.\
     \n\n`.cinta`\
     \nUsage: mengirim cintamu ke seseorang.\
     \n\n`.sayang`\
     \nUsage: untuk jadi buaya.\
+    \n\n`.o`\
+    \nUsage:ya gitu.\
     \n\n`.terkadang`\
     \nUsage: Auk dah iseng doang."
 })
