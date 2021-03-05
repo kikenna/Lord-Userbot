@@ -439,6 +439,21 @@ async def typewriter(typew):
 # Create by myself @lubego666
 
 
+@register(outgoing=True, pattern='^.gdl(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("🤪😱😭🤣")
+    await typew.edit("😜😁😆😲")
+    await typew.edit("🤪😱😭🤣")
+    await typew.edit("😜😁😆😲")
+    await typew.edit("🤪😱😭🤣")
+    await typew.edit("😜😁😆😲")
+    await typew.edit("`oks`")
+    sleep(0.5)
+    await typew.edit("🥵")
+    sleep(2)
+    await typew.edit("`GA DULU MAAF`")
+
 CMD_HELP.update({
     "gabut":
     "`.gabut` ; `.dino`\
@@ -451,6 +466,8 @@ CMD_HELP.update({
     \nUsage: untuk jadi buaya.\
     \n\n`.o`\
     \nUsage:ya gitu.\
+    \n\n`.gdl`\
+    \nUsage:ga dulu maaf.\
     \n\n`.terkadang`\
     \nUsage: Auk dah iseng doang."
 })
