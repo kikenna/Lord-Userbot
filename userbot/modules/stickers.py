@@ -24,8 +24,8 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "Mengambil Sticker Ini Ke Pack Lord",
-    "Lord Mengambil Sticker Ini Ke Pack",
+    "IZIN KU COLONG ANJING",
+    "Lord Berhasil Mencolong Sticker Ini Ke pack",
 ]
 
 
@@ -69,9 +69,9 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            return await args.edit("`File Tidak Didukung Lord!`")
+            return await args.edit("`Itu bukan stiker dongo!`")
     else:
-        return await args.edit("`Maaf Lord, Saya Gagal Mengambil Sticker Ini!`")
+        return await args.edit("`Maaf Bryan, Saya gagal mengambil stiker ini ke pack!`")
 
     if photo:
         splat = args.text.split()
