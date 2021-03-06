@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 import psutil
 
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, LORD_TEKS_KUSTOM, CMD_HELP, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, LORD_TEKS_KUSTOM, CMD_HELP, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.events import register
 
 
@@ -81,7 +81,7 @@ async def psu(event):
     for i, percentage in enumerate(psutil.cpu_percent(percpu=True)):
         cpuu += f"`Core {i}  : {percentage}%`\n"
     cpuu += "**Total CPU Usage**\n"
-    cpuu += f"`All Core: {psutil.cpu_percent()}%`\n"
+    cpuu += f"`Semua Core: {psutil.cpu_percent()}%`\n"
     # RAM Usage
     svmem = psutil.virtual_memory()
     memm = "**Memori Digunakan**\n"
@@ -90,8 +90,8 @@ async def psu(event):
     memm += f"`Used      : {get_size(svmem.used)}`\n"
     memm += f"`Percentage: {svmem.percent}%`\n"
     # Bandwidth Usage
-    bw = "**Bandwith Usage**\n"
-    bw += f"`Upload  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
+    bw = "**Bandwith Digunakan**\n"
+    bw += f"`Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
     bw += f"`Download: {get_size(psutil.net_io_counters().bytes_recv)}`\n"
     help_string = f"{str(softw)}\n"
     help_string += f"{str(cpuu)}\n"
@@ -223,13 +223,13 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **┗┓LORD USERBOT┏┛** \n"
+        f" **- NEWBIE USERBOT -** \n"
         f"\n__**{LORD_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**♛ Lord** \n"
-        f" ➥ `{DEFAULTUSER}` \n"
-        f"**♛ Username** \n"
-        f" ➥ `@{user.username}` \n"
+        f"**❖ Lord** \n"
+        f" ➨ `{DEFAULTUSER}` \n"
+        f"**❖ Username** \n"
+        f" ➨ `@{user.username}` \n"
         f"┏━━━━━━━━━━━━━━━━━━━\n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
         f"┣[• `Python   :`Ver {python_version()} \n"
@@ -261,16 +261,16 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"━━━━━━━━━━━━━━━━━━━━\n"
-        f"     **- NEWBIE USERBOT -** \n\n"
-        f"◆ **Lord**     \n   ➨ `{DEFAULTUSER}` \n"
-        f"◆ **Username** \n   ➨ `@{user.username}` \n"
-        f"◆ **Telethon** \n   ➨ `Versi {version.__version__}` \n"
-        f"◆ **Python**   \n   ➨ `Versi {python_version()}` \n"
-        f"◆ **Versi Bot**\n   ➨ `{BOT_VER}` \n"
-        f"◆ **Modul**    \n   ➨ `{len(modules)}` \n\n"
-        f"◆ **Repo Userbot:** [Newbie-Bot](https://github.com/yahiko963/Lord-Userbot\n◆ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n◆ **Pemilik:** [Frisky](t.me/Lubego666)\n")
-        f"━━━━━━━━━━━━━━━━━━━━")
+        f"**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**\n"
+        f"     **♕ NEWBIE USERBOT ♕** \n\n"
+        f"✶ **Lord**     \n   ➨ `{DEFAULTUSER}` \n"
+        f"✶ **Username** \n   ➨ `@{user.username}` \n"
+        f"✶ **Telethon** \n   ➨ `Versi {version.__version__}` \n"
+        f"✶ **Python**   \n   ➨ `Versi {python_version()}` \n"
+        f"✶ **Versi Bot**\n   ➨ `{BOT_VER}` \n"
+        f"✶ **Modul**    \n   ➨ `{len(modules)}` \n\n"
+        f"✶ **Repo Userbot:** [NewbieBot](https://github.com/yahiko963/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Risky](t.me/Lubego666)\n"
+        f"**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -296,16 +296,17 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **┗┓LORD USERBOT┏┛** \n\n"
-        f"♛ **Lord:** \n"
-        f" `{DEFAULTUSER}` \n"
-        f"♛ **Username:** \n"
-        f" `@{user.username}` \n\n"
-        f"__Lord-Userbot Adalah Userbot Khusus__ "
-        f"__Yang Digunakan Untuk Bersenang-Senang__ "
-        f"__Di Telegram__ __Versi Bot Yang Digunakan__ `{BOT_VER}` "
-        f"__Jumlah Modul Dalam Lord Userbot__ `{len(modules)}` \n\n"
-        f"❃ **Repo Userbot:** [Lord-Userbot](https://github.com/Zora24/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Alvin](t.me/liualvinas)\n")
+        f"**♕ LORD USERBOT** \n"
+        f"┏━━━━━━━━━━━━━━━━━━━ \n"
+        f"┣|• `Lord     :`{DEFAULTUSER} \n"
+        f"┣|• `Username :`@{user.username} \n"
+        f"┣|• `Telethon :`Ver {version.__version__} \n"
+        f"┣|• `Python   :`Ver {python_version()} \n"
+        f"┣|• `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
+        f"┣|• `Bot Ver  :`{BOT_VER} \n"
+        f"┣|• `Modules  :`{len(modules)} Modules \n"
+        f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
+        f"[Repo](https://github.com/Zora24/Lord-Userbot) | [Grup Support](t.me/LordUserbot_Group) | [Owner](t.me/liualvinas)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
