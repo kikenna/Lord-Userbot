@@ -226,10 +226,10 @@ async def amireallyalive(alive):
         f" **- NEWBIE USERBOT -** \n"
         f"\n__**{LORD_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**❖ Lord** \n"
-        f" ➨ `{DEFAULTUSER}` \n"
-        f"**❖ Username** \n"
-        f" ➨ `@{user.username}` \n"
+        f"** User** \n"
+        f"  `{DEFAULTUSER}` \n"
+        f"** Username** \n"
+        f"  `@{user.username}` \n"
         f"┏━━━━━━━━━━━━━━━━━━━\n"
         f"┣[• `Telethon :`Ver {version.__version__} \n"
         f"┣[• `Python   :`Ver {python_version()} \n"
@@ -262,14 +262,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**\n"
-        f"     **♕ NEWBIE USERBOT ♕** \n\n"
-        f"✶ **Lord**     \n   ➨ `{DEFAULTUSER}` \n"
-        f"✶ **Username** \n   ➨ `@{user.username}` \n"
-        f"✶ **Telethon** \n   ➨ `Versi {version.__version__}` \n"
-        f"✶ **Python**   \n   ➨ `Versi {python_version()}` \n"
-        f"✶ **Versi Bot**\n   ➨ `{BOT_VER}` \n"
-        f"✶ **Modul**    \n   ➨ `{len(modules)}` \n\n"
-        f"✶ **Repo Userbot:** [NewbieBot](https://github.com/yahiko963/Lord-Userbot)\n❃ **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n❃ **Pemilik:** [Risky](t.me/Lubego666)\n"
+        f"     **- NEWBIE USERBOT -** \n\n"
+        f" **Name**     \n   ➠ `{DEFAULTUSER}` \n"
+        f" **Username** \n   ➠ `@{user.username}` \n"
+        f" **Telethon** \n   ➠ `Versi {version.__version__}` \n"
+        f" **Python**   \n   ➠ `Versi {python_version()}` \n"
+        f" **Versi Bot**\n   ➠ `{BOT_VER}` \n"
+        f" **Modul**    \n   ➠ `{len(modules)}` \n\n"
+        f" **Repo Userbot:** [NewbieBot](https://github.com/yahiko963/Lord-Userbot)\n **Grup Userbot: **[Tekan](t.me/LordUserbot_Group)\n **Pemilik:** [Risky](t.me/Lubego666)\n"
         f"**▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**")
     if ALIVE_LOGO:
         try:
@@ -296,7 +296,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**♕ LORD USERBOT** \n"
+        f"**- NEWBIE USERBOT -** \n"
         f"┏━━━━━━━━━━━━━━━━━━━ \n"
         f"┣|• `Lord     :`{DEFAULTUSER} \n"
         f"┣|• `Username :`@{user.username} \n"
@@ -306,7 +306,7 @@ async def amireallyalive(alive):
         f"┣|• `Bot Ver  :`{BOT_VER} \n"
         f"┣|• `Modules  :`{len(modules)} Modules \n"
         f"┗━━━━━━━━━━━━━━━━━━━ \n\n"
-        f"[Repo](https://github.com/Zora24/Lord-Userbot) | [Grup Support](t.me/LordUserbot_Group) | [Owner](t.me/liualvinas)")
+        f"[Repo](https://github.com/Yahiko963/Lord-Userbot) | [Grup Support](t.me/LordUserbot_Group) | [Owner](t.me/Lubego666)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
