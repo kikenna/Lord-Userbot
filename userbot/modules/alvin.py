@@ -439,6 +439,21 @@ async def typewriter(typew):
 # Create by myself @lubego666
 
 
+@register(outgoing=True, pattern='^.b(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`halo`")
+    sleep(1)
+    await typew.edit("`Namaku,Bryan :)`")
+    sleep(1)
+    await typew.edit("`Umur 14 Tahun`")
+    sleep(1)
+    await typew.edit("`Asal Karawang`")
+    sleep(1)
+    await typew.edit("`Salken Teman`")
+# Create by myself @lubego666
+
+
 @register(outgoing=True, pattern='^.gdl(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
