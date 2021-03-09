@@ -24,8 +24,8 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "Mengambil Sticker Ini Ke Pack Lord",
-    "Lord Mengambil Sticker Ini Ke Pack",
+    "`Curi Dulu Yekan jhahah`",
+    "`Bagus Juga Nih Stiker,Ambil Ah`",
 ]
 
 
