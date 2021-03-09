@@ -69,9 +69,9 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            return await args.edit("`File Tidak Didukung Lord!`")
+            return await args.edit("`Anjir Burik Ga Bisa Dimbil`")
     else:
-        return await args.edit("`Maaf Lord, Saya Gagal Mengambil Sticker Ini!`")
+        return await args.edit("`Lah Kok Ga Bisa Diambil ,Sialan !`")
 
     if photo:
         splat = args.text.split()
@@ -242,7 +242,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"**Berhasil Menambahkan Sticker Ke Pack, Tekan** **[Lord Sticker](t.me/addstickers/{packname})** **Untuk Melihat Pack Anda**",
+            f"**Mantap Stiker Baru, Ini** **[Punyaku](t.me/addstickers/{packname})** **Gausah Diliat-liat**",
             parse_mode="md",
         )
 
