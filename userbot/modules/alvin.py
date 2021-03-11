@@ -475,17 +475,16 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0.5)
-    await typew.edit("🟥🟧🟨🟦⬜️\n
-                      🟧🟨🟦⬜️🟥\n
-                      🟨🟦⬜️🟥🟧")
-    sleep(0.5)
-    await typew.edit("🟧🟨🟦⬜️🟥\n
-                      🟨🟦⬜️🟥🟧\n
+    await typew.edit("🟥🟧🟨🟦⬜️ \n\n
+                      🟧🟨🟦⬜️🟥 \n\n
+                      🟨🟦⬜️🟥🟧 ")
+    await typew.edit("🟧🟨🟦⬜️🟥 \n\n
+                      🟨🟦⬜️🟥🟧 \n\n
                       🟥🟧🟨🟦⬜️")
+    await typew.edit("🟨🟦⬜️🟥🟧 \n\n
+                      🟥🟧🟨🟦⬜️ \n\n
+                      🟧🟨🟦⬜️🟥 ")
     sleep(0.5)
-    await typew.edit("🟨🟦⬜️🟥🟧\n
-                      🟥🟧🟨🟦⬜️\n
-                      🟧🟨🟦⬜️🟥")
     await typew.edit("⬜️")
     await typew.edit("⬜️🟦")
     await typew.edit("⬜️🟦🟨")
