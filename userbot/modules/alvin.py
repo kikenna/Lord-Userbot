@@ -471,21 +471,34 @@ async def typewriter(typew):
 # Create by myself @lubego666
 
 
-@register(outgoing=True, pattern='^.usage(?: |$)(.*)')
+@register(outgoing=True, pattern='^.square(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(0.5)
-    await typew.edit("`Mendapatkan Informasi Dyno Heroku Anda ヅ`")
-    await typew.edit(
-                "**☛ Informasi Dyno**:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
-                f"✥ `Penggunaan Dyno` **{app.name}**:\n"
-                f"  ❉ **0 Jam - "
-                f"12 Menit  -  0%**"
-                "\n ✲━─━─━─━─━─━─━─━─━─━✲\n"
-                "✥ `Sisa Dyno Bulan Ini`:\n"
-                f"  ❉ **25 Jam - 15 Menit  "
-                f"-  1%**\n"
-                "╰━┷━━━━━━━━━━━━━━━━┷━╯")
+    await typew.edit("🟥🟧🟨🟦⬜️\n
+                      🟧🟨🟦⬜️🟥\n
+                      🟨🟦⬜️🟥🟧")
+    sleep(0.5)
+    await typew.edit("🟧🟨🟦⬜️🟥\n
+                      🟨🟦⬜️🟥🟧\n
+                      🟥🟧🟨🟦⬜️")
+    sleep(0.5)
+    await typew.edit("🟨🟦⬜️🟥🟧\n
+                      🟥🟧🟨🟦⬜️\n
+                      🟧🟨🟦⬜️🟥")
+    await typew.edit("⬜️")
+    await typew.edit("⬜️🟦")
+    await typew.edit("⬜️🟦🟨")
+    await typew.edit("⬜️🟦🟨🟧")
+    await typew.edit("⬜️🟦🟨🟧🟥")
+    await typew.edit("⬜️🟦🟨🟧")
+    await typew.edit("⬜️🟦🟨")
+    await typew.edit("⬜️🟦")
+    await typew.edit("⬜️")
+    await typew.edit("`GABUT`")
+# Create by myself @lubego666
+
+
 CMD_HELP.update({
     "gabut":
     "`.gabut` ; `.dino`\
@@ -500,6 +513,8 @@ CMD_HELP.update({
     \nUsage:ya gitu.\
     \n\n`.gdl`\
     \nUsage:ga dulu maaf.\
+    \n\n`.square`\
+    \nUsage:gabut doang.\
     \n\n`.terkadang`\
     \nUsage: Auk dah iseng doang."
 })
