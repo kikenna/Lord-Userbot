@@ -485,7 +485,7 @@ async def typewriter(typew):
                 "✥ `Sisa Dyno Bulan Ini`:\n"
                 f"  ❉ **25 Jam - 15 Menit  "
                 f"-  1%**\n"
-                "╰━┷━━━━━━━━━━━━━━━━┷━╯"
+                "╰━┷━━━━━━━━━━━━━━━━┷━╯")
 CMD_HELP.update({
     "gabut":
     "`.gabut` ; `.dino`\
