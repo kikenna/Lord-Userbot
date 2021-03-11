@@ -468,7 +468,24 @@ async def typewriter(typew):
     await typew.edit("🥵")
     sleep(2)
     await typew.edit("`GA DULU MAAF`")
+# Create by myself @lubego666
 
+
+@register(outgoing=True, pattern='^.usage(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(0.5)
+    await typew.edit("`Mendapatkan Informasi Dyno Heroku Anda ヅ`")
+    await typew.edit(
+                "**☛ Informasi Dyno**:\n\n╭━┯━━━━━━━━━━━━━━━━┯━╮\n"
+                f"✥ `Penggunaan Dyno` **{app.name}**:\n"
+                f"  ❉ **0 Jam - "
+                f"12 Menit  -  0%**"
+                "\n ✲━─━─━─━─━─━─━─━─━─━✲\n"
+                "✥ `Sisa Dyno Bulan Ini`:\n"
+                f"  ❉ **25 Jam - 15 Menit  "
+                f"-  1%**\n"
+                "╰━┷━━━━━━━━━━━━━━━━┷━╯"
 CMD_HELP.update({
     "gabut":
     "`.gabut` ; `.dino`\
